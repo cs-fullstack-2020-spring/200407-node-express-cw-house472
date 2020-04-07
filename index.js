@@ -22,7 +22,7 @@ app.get('/displayName', (req, res)=>{
 
 //Exercise 3
 //Create Array
-let studentArray = ['Charles , High', 'Johnny , Low', 'Ray , Medium', 'Tom , High']
+let studentArray = ['Charles , High', 'Johnny , Low', 'Ray , Medium', 'Tom , High'] // this should be an array of objects with two props
 
 
 
@@ -43,7 +43,8 @@ let listOfStudents=studentArray
 
 //define All students route
 app.get('/allStudents', (req, res)=>{
-    res.send(`this list of students is ${listOfStudents}`)
+    // you should be iterating to display each student name and student confidence from an array of objects
+    res.send(`this list of students is ${listOfStudents}`) 
 })
 
 //create the listener and pass port and callback
